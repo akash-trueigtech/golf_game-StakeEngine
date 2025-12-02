@@ -126,5 +126,5 @@ temp/
 *.bak
 
 # Custom example: results or generated artifacts
-results/
-outputs/
+# results/
+# outputs/
