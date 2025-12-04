@@ -50,10 +50,10 @@ def run_simulation(rounds=100000, bet=1.0, seed=None):
     os.makedirs("library/books", exist_ok=True)
 
     # === Write books.json ===
-    with open("library/books/books102.json", "w") as f:
+    with open("library/books/books103.json", "w") as f:
         json.dump(books, f, indent=2)
 
-    with open("library/books/lookup102.csv", "w", newline="") as csvfile:
+    with open("library/books/lookup103.csv", "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["id", "weight", "payout"])
 
@@ -65,7 +65,7 @@ def run_simulation(rounds=100000, bet=1.0, seed=None):
             ])
 
 
-    print(list(lookup.keys()))
+    # print(list(lookup.keys()))
     print(f"Simulation complete.")
     print(f"Unique outcomes: {len(books)}")
     print(f"books.json and lookup.csv written to /library/books/")
